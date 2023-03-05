@@ -1,7 +1,7 @@
 # The Researcher
 
 ## Video Walkthrough
-<img src='https://github.com/amcgee3/ChatGP_API1/blob/main/HATCH2023_AdobeExpress'/>
+<img src='https://github.com/amcgee3/ChatGP_API1/blob/main/HATCH2023_AdobeExpress.gif'/>
 
 ## Inspiration
 I realized that during this hackathon I was a bit understaffed and needed a hand doing the research. So I decided that I should create a program that utilizes chatgpt to create the ideal partner. I can tell it what to do and I don't get any back sass whatsoever.
