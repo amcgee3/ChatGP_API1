@@ -175,6 +175,7 @@ namespace HATCH_2023
             this.jokeBTN.TabIndex = 11;
             this.jokeBTN.Text = "Joke";
             this.jokeBTN.UseVisualStyleBackColor = true;
+            this.jokeBTN.Click += new System.EventHandler(this.jokeBTN_Click);
             // 
             // Dashboard
             // 

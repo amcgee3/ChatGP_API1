@@ -284,5 +284,46 @@ namespace HATCH_2023
                 }
             }
         }
+
+        private void jokeBTN_Click(object sender, EventArgs e)
+        {
+            questionTXT.Text += ", but in the form of a joke.";
+            string prompt = questionTXT.Text;
+
+            if (!string.IsNullOrWhiteSpace(prompt))
+            {
+                JObject requestBody = new JObject(
+                    new JProperty("model", "text-davinci-003"),
+                    new JProperty("prompt", prompt),
+                    new JProperty("temperature", 0.7),
+                    new JProperty("max_tokens", 256),
+                    new JProperty("top_p", 1),
+                    new JProperty("frequency_penalty", 0),
+                    new JProperty("presence_penalty", 0.6)
+
+                );
+
+                string requestBodyString = requestBody.ToString();
+
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + API_KEY);
+                    StringContent content = new StringContent(requestBodyString, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await client.PostAsync(API_URL, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseString = await response.Content.ReadAsStringAsync();
+                        JObject jsonResponse = JObject.Parse(responseString);
+                        string generatedText = jsonResponse["choices"][0]["text"].ToString();
+
+                        responseTXT.AppendText(generatedText + Environment.NewLine);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: " + response.StatusCode);
+                    }
+                }
+            }
     }
 }
