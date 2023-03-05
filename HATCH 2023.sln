@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HATCH 2023", "HATCH 2023\HATCH 2023.csproj", "{0D050395-1580-453B-BFF1-0CFBC2993ADA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D050395-1580-453B-BFF1-0CFBC2993ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D050395-1580-453B-BFF1-0CFBC2993ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D050395-1580-453B-BFF1-0CFBC2993ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D050395-1580-453B-BFF1-0CFBC2993ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5C86EB5-B076-4B20-BD06-B0CC79B22D7B}
+	EndGlobalSection
+EndGlobal
